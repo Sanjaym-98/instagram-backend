@@ -1,1 +1,2 @@
-# instagram-backend
+# instaclone-backend
+backend of instaclone app
