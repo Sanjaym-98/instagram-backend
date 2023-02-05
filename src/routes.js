@@ -33,7 +33,7 @@ router.post("/", async(req,res)=>{
             likes:req.body.likes,
             description:req.body.description,
             PostImage:result.url,
-            date: `${date.getFullYear()} / ${date.getMonth()} / ${date.getDate()}`,
+            date: `${date.getFullYear()} / ${date.getMonth()+1} / ${date.getDate()}`,
         }
         const Post_Insert = await PostModel.create(data);
         res.status(200).json({
